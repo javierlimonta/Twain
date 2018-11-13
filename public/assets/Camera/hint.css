@@ -1,0 +1,366 @@
+/* the styles of Dynamsoft Camera SDK */
+.ds-dws-video-viewer-wrapper {
+    cursor: default;
+    float: left;
+    position: relative;
+    text-align: left !important;
+}
+
+.ds-dws-img-viewer-wrapper {
+    cursor: default;
+    float: left;
+    text-align: left !important;
+}
+.ds-dws-video-viewer-wrapper,
+.ds-dws-img-viewer-container,
+.ds-dws-doc-editor-container {
+    /*no blue selection and images*/
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ds-dws-img-container {
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.ds-dws-img-hint-container {
+    font: 12px Times New Roman;
+    position: absolute;
+    width: 60px;
+    height: 15px;
+}
+
+.ds-dws-display-inline-block {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.ds-dws-display-none {
+    display: none;
+}
+
+.ds-dws-display-block {
+    display: block;
+}
+
+.ds-dws-cursor-hand {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.ds-dws-cursor-crosshair {
+    cursor: crosshair;
+}
+
+.ds-dws-img-selector {
+    position: absolute;
+    border: 1px dashed #000000;
+    z-index: 1;
+}
+
+.ds-dialog-wrap{
+	position : fixed; 
+	left : 0;
+	top : 20%;
+	width : 90%;
+}
+
+.ds-dialog .ks-ext-close .ks-ext-close-x {
+    height: 8px
+}
+
+.ds-dialog .ks-ext-close,.ds-dialog .ks-ext-close:hover {
+    background: none;
+    border: 0
+}
+
+.ds-dialog {
+    font-family: "verdana","sans-serif";
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 392px;
+    border: 1px solid #e7e7e7;
+    background-color: #f1f2f2
+}
+
+.ds-dialog a {
+    text-decoration: none
+}
+
+.ds-dialog ul {
+    margin: 10px 0 10px 20px;
+    padding-left: 10px;
+    list-style-type: disc
+}
+
+.ds-dialog .ds-dialog-body {
+    margin: 0;
+    padding: 15px;
+	background-color: #FFFFFF;
+	border: 1px solid #E7E7E7;
+}
+
+.ds-dialog .ds-dialog-body img{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.ds-dialog .ds-dialog-body-Mac {
+    margin: 0;
+    padding: 15px;
+    width: 360px;
+	background-color: #FFFFFF;
+	border: 1px solid #E7E7E7;
+}
+
+.ds-dialog .ds-dialog-body-NotAllowed {
+    margin: 0;
+    padding: 15px;
+    width: 360px;
+    color: #444444;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7
+}
+
+.ds-dialog .ds-dialog-body-Upgrade {
+    margin: 0;
+    padding: 15px;
+    width: 360px;
+    height: 240px;
+    color: #444;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7
+}
+
+.ds-dialog .ds-dialog-body-Scan {
+    margin: 0;
+    padding: 15px;
+    width: 380px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7
+}
+
+.ds-dialog .ds-dialog-body-Scan-sample {
+    margin: 0;
+    padding: 15px;
+    width: 380px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7
+}
+
+.ks-dialog,.ks-popup {
+    background-color: #FBFBFB;
+    border: 1px solid #ACB4BE
+}
+
+.ks-overlay {
+    position: absolute;
+    left: -9999px;
+    top: -9999px
+}
+
+.ks-dialog,.ks-overlay {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    outline: 0;
+    z-index: 9998;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+.ks-dialog-hidden {
+    visibility: hidden
+}
+
+.ks-dialog-focused,.ks-overlay-focused {
+    z-index: 9999
+}
+
+.ks-overlay-hidden {
+    visibility: hidden
+}
+
+.ks-overlay-mask-hidden {
+    display: none
+}
+
+.ks-overlay-shown {
+    visibility: visible
+}
+
+.ks-overlay-mask-shown {
+    display: block
+}
+
+.ks-overlay-mask,.ks-dialog-mask {
+    background-color: #000000;
+    opacity: 0.3;
+    z-index: 9998
+}
+
+.ks-ext-close {
+    padding: 0 20px;
+    position: absolute;
+    right: -5px;
+    top: 5px
+}
+
+.ks-ext-close,.ks-ext-close:link {
+    color: #2222AA;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.ks-ext-mask {
+    background: #999999;
+    opacity: 0.7
+}
+
+/* the styles of box/button */
+
+.dwt-box-title {
+    color: #333333;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    clear: both
+}
+
+
+.dwt-red {
+    color: red;
+    margin-left: 5px
+}
+
+.dwt-button {
+    background-image: url('btn-download.png');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 34px;
+    position: relative;
+    margin: 20px auto 0;
+    cursor: pointer
+}
+
+.dwt-button:hover {
+    background-position: 0 -34px
+}
+
+.dwt-button:active {
+    background-position: 0 -68px
+}
+
+.ds-dwt-dialogProgress{
+	width:300px
+}
+
+.DYNLogo
+{
+    background:url(logo.gif) left top no-repeat; 
+    width:159px; 
+    height:39px;
+}
+
+dialog {
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+}
+
+.canvas-editor{position:absolute;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
+
+/*not h5 start*/
+.ds-dws-not-h5-canvas-editor-container{position:absolute;overflow:hidden;}
+.ds-dws-not-h5-canvas-editor-container .ds-dws-not-h5-document-border-points{position:absolute;}
+.ds-dws-not-h5-canvas-editor-container .ds-dws-not-h5-document-border-points div{position:absolute;width:2px;height:2px;filter:alpha(opacity=70);background:#5EB7E4;}
+.ds-dws-not-h5-canvas-editor-container .canvas-editor{filter:alpha(opacity=1);background:white;}
+/*not h5 end*/
+
+
+.dynamsoft-dialog-wrap {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    width: 90%;
+}
+
+/* dialog/mask body */
+
+.dynamsoft-dialog {
+    font-family: "Helvetica", "Arial", "sans-serif";
+    color: #444444;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 392px;
+    border: 1px solid #e7e7e7;
+    background-color: #F1F2F2;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.dynamsoft-dialog2 {
+    font-family: "Helvetica", "Arial", "sans-serif";
+    color: #444444;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+    width: auto;
+}
+
+.dynamsoft-dialog a {
+    text-decoration: none
+}
+
+.dynamsoft-dialog ul {
+    margin: 10px 0 10px 20px;
+    padding-left: 10px;
+    list-style-type: disc
+}
+
+.dynamsoft-dialog-wrap {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    width: 90%;
+}
+
+.dynamsoft-dialog-close {
+    float: right;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTUyMzI2RDNDREJGMTFFN0I5QzRGMjk2QjIzMDhBMjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTUyMzI2RDRDREJGMTFFN0I5QzRGMjk2QjIzMDhBMjAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NTIzMjZEMUNEQkYxMUU3QjlDNEYyOTZCMjMwOEEyMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NTIzMjZEMkNEQkYxMUU3QjlDNEYyOTZCMjMwOEEyMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuW+RZ4AAADASURBVHjafJJdCsIwEIQ3TfBOvnkQf1pN0SMJgr9vPYVPPZSQ1lmYyBKrga8byEx2tq3ruq4RkTk4gEGmVwWOoA94LMAaeNBOmFR8AlswC9xUrA5EY/IUa4oH2KkhgRqMPBB2kkKsNQUeJCPO1fGiO7urRoLJmk22001jZHEeqFyj/Fm2gw545hu7MtKG9SuSii9gxdqabjVNn6E9b1wacc4ci5mawBhZHIsPl0w3NQ1qeIIX2P/4NRIv0tq/BRgAFzc2Awl1/rQAAAAASUVORK5CYII=) no-repeat;
+    /*display: inline-block;*/
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.dynamsoft-dcs-dlg-header {
+    padding: 15px 15px 5px 5px;
+    height: 40px;
+    position: relative;
+}
+
+.dynamsoft-dcs-box-title {
+    color: #333333;
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-size: 16px;
+    font-weight: bold;
+    clear: both;
+	text-align: center;
+}
+
+.dynamsoft-dcs-dlg-center {
+	text-align: center;
+}

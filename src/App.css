@@ -1,0 +1,2 @@
+#dcsImageContainer { position: relative; height: 360px; width: 488px; background-color: white; border-top: solid 1px #ddd; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+#dcsImageContainer * { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
