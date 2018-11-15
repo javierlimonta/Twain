@@ -164,7 +164,7 @@ export class WebTwain extends Component {
                             </button>
 
                             <button className="btn btn-success" disabled={!this.state.loaded} onClick={this.add}
-                                    style={{marginRight: 10}}>Add
+                                    style={{marginRight: 10}}>Generate DPF
                             </button>
                             <button className="btn btn-primary" onClick={this.saveClick} style={{marginRight: 10}}>
                                 Save
@@ -209,7 +209,7 @@ export class WebTwain extends Component {
                         </div>
                     </div>
                     <div className="col-md-8">
-                        <Iframe url={this.state.pdf} width="100%" height="750px" display="initial"
+                        <Iframe url={this.state.pdf} width="100%" height="700px" display="initial"
                                 position="relative" allowFullScreen/>
                     </div>
                 </div>

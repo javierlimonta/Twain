@@ -9,6 +9,8 @@ class App extends Component {
         return (
             <div className="App">
                <WebTwain/>
+                <hr/>
+                <WebScan/>
             </div>
         );
     }

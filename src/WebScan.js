@@ -115,7 +115,7 @@ export class WebScan extends Component {
                                 this.state.images.map((image, key) => {
                                     return (
                                         <div key={key} className="col-md-3" style={{margin: 20}}>
-                                            <img src={image} alt={key} style={{width: '100%', height: 250}}/>
+                                            <img src={image} alt={key} style={{width: 290, height: 250}}/>
                                         </div>)
                                 })
                             }
